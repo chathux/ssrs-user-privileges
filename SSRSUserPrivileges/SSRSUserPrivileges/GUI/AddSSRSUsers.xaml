@@ -1,0 +1,24 @@
+﻿<Window x:Class="SSRSUserPrivileges.GUI.AddSSRSUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddSSRSUsers" Height="600" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Margin="5,0,0,0">SSRS Users</Label>
+
+        <ListView Name="lvUsers" Grid.Row="1" Margin="5,0,0,0">
+
+        </ListView>
+
+    </Grid>
+</Window>

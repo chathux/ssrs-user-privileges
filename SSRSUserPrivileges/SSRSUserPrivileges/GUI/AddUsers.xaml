@@ -1,0 +1,30 @@
+﻿<Window x:Class="SSRSUserPrivileges.GUI.AddUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddUsers" Height="200" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Label Margin="5,0,0,0">Type Logins Seperated with comma(,), new line(\n) or space</Label>
+        <TextBox Grid.Row="1" Name="txtUsers" Margin="5" TextWrapping="Wrap">
+            
+        </TextBox>
+        
+        <StackPanel Grid.Row="2" Margin="5,0,5,0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="btnAdd" Click="btnAdd_Click" Width="50" Height="25">Add</Button>
+            <Button Name="btnCancel" Click="btnCancel_Click" Width="50" Height="25" Margin="5,0,0,0">Cancel</Button>
+            
+        </StackPanel>
+
+         
+        
+        
+    </Grid>
+</Window>
